@@ -199,6 +199,7 @@ img {
 .logo a img {
   height: 80px;
   width: 80px;
+  border: 2px solid #1a1818; 
 }
 
 .logo h1 {
@@ -212,7 +213,7 @@ img {
 
 /* Sección Reserva */
 
-#reserva {
+#presupuesto {
   padding: 50px 0;
   background-color: #e6c1e6;
   background-image: url("../imagenes/fondo_contacto.jpeg"); 
@@ -221,7 +222,7 @@ img {
   background-position: center;
 }
 
-#reserva h1 {
+#presupuesto h1 {
   margin-bottom: 30px;
   color: #17181a; 
   text-align: center;
@@ -287,35 +288,35 @@ img {
 
 /* Elementos adicionales */
 
-#reserva .imagen-mascota {
+#presupuesto .imagen-mascota {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
 }
 
-#reserva .imagen-mascota img {
+#presupuesto .imagen-mascota img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
 }
 
-#reserva .descripcion {
+#presupuesto .descripcion {
   margin-bottom: 20px;
   text-align: justify;
 }
 
-#reserva .descripcion p {
+#presupuesto .descripcion p {
   font-size: 16px;
   line-height: 1.5;
 }
 
-#reserva .ventajas {
+#presupuesto .ventajas {
   list-style: none;
   padding: 0;
   margin-top: 20px;
 }
 
-#reserva .ventajas li {
+#presupuesto .ventajas li {
   margin-bottom: 10px;
   padding: 10px;
   border: 1px solid #ddd;
@@ -323,18 +324,18 @@ img {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
-#reserva .ventajas li i {
+#presupuesto .ventajas li i {
   font-size: 20px;
   color: #007bff; 
   margin-right: 10px;
 }
 
-#reserva .ventajas li p {
+#presupuesto .ventajas li p {
   font-size: 16px;
   line-height: 1.5;
 }
 
-#reserva .boton-reserva {
+#presupuesto .boton-reserva {
   background-color: #007bff; 
   color: #fff;
   padding: 10px 20px;
@@ -343,12 +344,12 @@ img {
   cursor: pointer;
   font-size: 18px;
   
-  #reserva .boton-reserva:hover {
+#presupuesto .boton-presupuesto:hover {
     background-color: #33b5e5; 
   }
   
   @media (max-width: 768px) {
-    #reserva .imagen-mascota, #formulario {
+    #presupuesto .imagen-mascota, #formulario {
       float: none;
       width: 100%;
     }
@@ -463,6 +464,7 @@ header {
 .logo img {
   height: 60px;
   width: 60px;
+  
 }
 
 .linea-verde {
