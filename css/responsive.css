@@ -2,15 +2,15 @@
 
 /* Escritorio */
 @media (min-width: 1024px) {
-    /* Estilos para escritorio */
+  /* Estilos para escritorio */
   }
   
-  /* Tablet */
-  @media (max-width: 1023px) and (min-width: 768px) {
-    /* Estilos para tablet */
+/* Tablet */
+@media (max-width: 1023px) and (min-width: 768px) {
+  /* Estilos para tablet */
   }
   
-  /* Móvil */
-  @media (max-width: 767px) {
-    /* Estilos para móvil */
+/* Móvil */
+@media (max-width: 767px) {
+  /* Estilos para móvil */
   }

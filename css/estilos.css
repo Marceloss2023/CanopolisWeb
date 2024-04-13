@@ -629,5 +629,9 @@ footer ul li a {
 .redes-sociales li:last-child {
   margin-right: 0;
 }
+.copyright {
+  display: grid;
+  place-items: center;
+}
 
 
