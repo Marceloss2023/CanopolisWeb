@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 5px;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 p {
@@ -66,12 +66,12 @@ img {
 }
 
 #bienvenidos {
-  background-image: url(imagenes/perros-jugando-jardin-1613561490.jpg);
+  background-image: url(/imagenes/perros-jugando-jardin-1613561490.jpg);  /* REVISAR */
   background-size: cover;
   background-position: center;
   text-align: center;
-  color: hwb(186 15% 65%);
-  padding: 50px 0;
+  color: hwb(185 30% 61%);
+  padding: 25px 0;
 }
 
 #bienvenidos h2 {
@@ -203,7 +203,7 @@ img {
 
 .logo {
   float: right;
-  margin-right: 15%; /* Separación desde el margen derecho */
+  margin-right: 30%; /* Separación desde el margen derecho */
 }
 
 .logo a img {
@@ -218,14 +218,14 @@ img {
 }
 
 
-/* Formulario de contacto*/
+/* --------------------------------------Pagina CONTACTO*/
 
 /* Sección Reserva */
 
 #reserva {
   padding: 50px 0;
-  background-color: #f7f7f7;
-  background-image: url("imagenes/fondo_patitas_2.jpg"); /* Reemplaza con tu imagen de fondo */
+  background-color: #e6c1e6;
+  background-image: url("../imagenes/fondo_contacto.jpeg"); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -233,7 +233,7 @@ img {
 
 #reserva h1 {
   margin-bottom: 30px;
-  color: #007bff; /* Azul brillante */
+  color: #17181a; 
   text-align: center;
   font-size: 36px;
 }
@@ -263,7 +263,7 @@ img {
 }
 
 #formulario button {
-  background-color: #007bff; /* Azul brillante */
+  background-color: #0f3969; 
   color: #fff;
   padding: 10px 20px;
   border-radius: 4px;
@@ -274,7 +274,7 @@ img {
 }
 
 #formulario button:hover {
-  background-color: #33b5e5; /* Azul más claro */
+  background-color: #33b5e5; 
 }
 
 #formulario .total {
@@ -330,12 +330,12 @@ img {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 #reserva .ventajas li i {
   font-size: 20px;
-  color: #007bff; /* Azul brillante */
+  color: #007bff; 
   margin-right: 10px;
 }
 
@@ -345,7 +345,7 @@ img {
 }
 
 #reserva .boton-reserva {
-  background-color: #007bff; /* Azul brillante */
+  background-color: #007bff; 
   color: #fff;
   padding: 10px 20px;
   border-radius: 4px;
@@ -354,7 +354,7 @@ img {
   font-size: 18px;
   
   #reserva .boton-reserva:hover {
-    background-color: #33b5e5; /* Azul más claro */
+    background-color: #33b5e5; 
   }
   
   @media (max-width: 768px) {
@@ -365,7 +365,7 @@ img {
   }
 }
 
-/* Pagina Galería*/
+/* --------------------------------------Pagina GALERIA*/
 
 /* Estilos generales */
 #carrete-perros {
@@ -395,11 +395,11 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px; /* Borde redondeado */
+  border-radius: 10px; /* Borde redondeado */
 }
 
 .foto:hover {
-  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar sobre la foto */
+  transform: scale(1.05); /* Aumenta el tamaño al pasar sobre la foto */
 }
 
 .foto .nombre {
@@ -415,10 +415,7 @@ img {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.foto:hover .nombre {
-  opacity: 1; /* Muestra el nombre al pasar sobre la foto */
-  visibility: visible;
-}
+
 
 /* Animación de giro */
 .foto.rotar {
@@ -445,7 +442,7 @@ img {
   background: #33b5e5;
 }
 
-/* SERVICIOS*/
+/* /* --------------------------------------Pagina SERVICIOS*/
 /* Estilos generales */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -462,7 +459,7 @@ body {
 }
 
 header {
-  background-color: #add8e6; /* Azul pastel */
+  background-color: #add8e6; 
   color: #495057;
   padding: 20px 0;
   position: relative;
@@ -484,7 +481,7 @@ header {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #add8e6; /* Azul pastel */
+  background-color: #add8e6; 
 }
 
 nav {
@@ -583,7 +580,7 @@ main {
 .contacto button {
   width: 50%;
   padding: 10px 20px;
-  background-color: #add8e6; /* Azul pastel */
+  background-color: #add8e6; 
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -593,7 +590,7 @@ main {
 }
 
 footer {
-  background-color: #add8e6; /* Azul pastel */
+  background-color: #add8e6; 
   color: #495057;
   padding: 50px 0;
 }

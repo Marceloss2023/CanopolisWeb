@@ -19,3 +19,4 @@ function calcularEstadia() {
   document.getElementById("total_monto").value = "$" + precioTotal;
 }
 
+
