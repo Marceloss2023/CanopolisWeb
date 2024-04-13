@@ -1,3 +1,5 @@
+/* este bloque corre en pagina CONTACTO*/ 
+
 function calcularEstadia() {
   var nombre = document.getElementById("nombre").value;
 
