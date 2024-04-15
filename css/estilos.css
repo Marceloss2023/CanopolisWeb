@@ -1,7 +1,6 @@
+/* Estilos generales */
 * {
   box-sizing: border-box;
-  margin: 5px;
-  padding: 5px;
 }
 
 body {
@@ -9,15 +8,17 @@ body {
   font-size: 16px;
   color: #333;
   background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  margin-bottom: 12px;
+  margin: 5px 0 12px;
 }
 
 p {
-  margin-bottom: 15px;
+  margin: 0 0 15px;
 }
 
 a {
@@ -32,6 +33,7 @@ a:hover {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 li {
@@ -43,6 +45,7 @@ img {
   height: auto;
 }
 
+/* Estilos de layout */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -65,12 +68,12 @@ img {
   }
 }
 
+/* Estilos de secciones */
 #bienvenidos {
-  
   background-size: cover;
   background-position: center;
   text-align: center;
-  color: hwb(185 30% 61%);
+  color: #9f5f9f;
   padding: 25px 0;
 }
 
@@ -82,6 +85,7 @@ img {
 #bienvenidos p {
   font-size: 18px;
   line-height: 1.5;
+  margin: 0;
 }
 
 #bienvenidos a {
@@ -90,6 +94,7 @@ img {
   padding: 10px 20px;
   border-radius: 4px;
   margin-top: 20px;
+  display: inline-block;
 }
 
 #bienvenidos a:hover {
@@ -109,6 +114,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 0;
 }
 
 #servicios li {
@@ -130,6 +136,7 @@ img {
 
 #servicios li p {
   font-size: 16px;
+  margin: 0;
 }
 
 #testimonios {
@@ -145,6 +152,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 0;
 }
 
 #testimonios li {
@@ -162,18 +170,17 @@ img {
   margin-bottom: 20px;
 }
 
+/* Estilos del menú y logo */
 .menu ul {
-  list-style: none;
-  padding: 0;
   display: flex;
   justify-content: flex-end;
-  margin-top: 20px; /* Separación desde la parte superior */
-  position: relative; /* Necesario para posicionar el borde */
+  margin-top: 20px;
+  position: relative;
+  padding: 0;
 }
 
-
 .menu ul li {
-  margin-right: 5mm;
+  margin-right: 15px;
 }
 
 .menu ul li:last-child {
@@ -185,6 +192,7 @@ img {
   color: #fff;
   padding: 10px 20px;
   border-radius: 4px;
+  display: block;
 }
 
 .menu ul li a:hover {
@@ -193,13 +201,17 @@ img {
 
 .logo {
   float: right;
-  margin-right: 30%; /* Separación desde el margen derecho */
+  margin-right: 30%;
+}
+
+.logo a {
+  display: block;
 }
 
 .logo a img {
   height: 80px;
   width: 80px;
-  border: 2px solid #1a1818; 
+  border: 2px solid #1a1818;
 }
 
 .logo h1 {
@@ -208,15 +220,11 @@ img {
   color: #000;
 }
 
-
-/* --------------------------------------Pagina CONTACTO*/
-
-/* Sección Reserva */
-
+/* Estilos de la página de contacto */
 #presupuesto {
   padding: 50px 0;
   background-color: #e6c1e6;
-  background-image: url("../imagenes/fondo_contacto.jpeg"); 
+  background-image: url("../imagenes/fondo_contacto.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -224,7 +232,7 @@ img {
 
 #presupuesto h1 {
   margin-bottom: 30px;
-  color: #17181a; 
+  color: #17181a;
   text-align: center;
   font-size: 36px;
 }
@@ -233,7 +241,7 @@ img {
   background-color: #fff;
   padding: 20px;
   border-radius: 4px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   max-width: 800px;
   margin: 0 auto;
 }
@@ -242,6 +250,7 @@ img {
   font-weight: bold;
   margin-bottom: 5px;
   color: #333;
+  display: block;
 }
 
 #formulario input {
@@ -254,18 +263,19 @@ img {
 }
 
 #formulario button {
-  background-color: #0f3969; 
+  background-color: #0f3969;
   color: #fff;
   padding: 10px 20px;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
   font-size: 18px;
-  transition: 0.3s;
+  transition: background-color 0.3s;
+  border: none;
 }
 
 #formulario button:hover {
-  background-color: #33b5e5; 
+  background-color: #33b5e5;
 }
 
 #formulario .total {
@@ -277,6 +287,7 @@ img {
 #formulario .total label {
   font-weight: normal;
   color: #333;
+  display: block;
 }
 
 #formulario .total input {
@@ -284,10 +295,12 @@ img {
   border: none;
   background-color: #f7f7f7;
   font-size: 18px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-/* Elementos adicionales */
-
+/* Elementos adicionales de la página de contacto */
 #presupuesto .imagen-mascota {
   float: left;
   margin-right: 20px;
@@ -308,6 +321,7 @@ img {
 #presupuesto .descripcion p {
   font-size: 16px;
   line-height: 1.5;
+  margin: 0;
 }
 
 #presupuesto .ventajas {
@@ -321,44 +335,47 @@ img {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #presupuesto .ventajas li i {
   font-size: 20px;
-  color: #007bff; 
+  color: #007bff;
   margin-right: 10px;
 }
 
 #presupuesto .ventajas li p {
   font-size: 16px;
   line-height: 1.5;
+  margin: 0;
 }
 
 #presupuesto .boton-reserva {
-  background-color: #007bff; 
+  background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
   font-size: 18px;
-  
-#presupuesto .boton-presupuesto:hover {
-    background-color: #33b5e5; 
-  }
-  
-  @media (max-width: 768px) {
-    #presupuesto .imagen-mascota, #formulario {
-      float: none;
-      width: 100%;
-    }
+  display: inline-block;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+#presupuesto .boton-reserva:hover {
+  background-color: #33b5e5;
+}
+
+@media (max-width: 768px) {
+  #presupuesto .imagen-mascota,
+  #formulario {
+    float: none;
+    width: 100%;
   }
 }
 
-/* --------------------------------------Pagina GALERIA*/
-
-/* Estilos generales */
+/* Estilos de la página de galería */
 #carrete-perros {
   padding: 50px 0;
   background-color: #f7f7f7;
@@ -366,31 +383,31 @@ img {
 
 .contenedor-fotos {
   display: flex;
-  flex-wrap: wrap; /* Ajusta las fotos automáticamente al ancho */
-  justify-content: center; /* Centra las fotos horizontalmente */
-  align-items: center; /* Centra las fotos verticalmente */
-  gap: 20px; /* Espacio entre las fotos */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .foto {
-  width: 250px; /* Ancho de cada foto */
-  height: 350px; /* Altura de cada foto */
+  width: 250px;
+  height: 350px;
   position: relative;
-  transition: transform 0.3s ease; /* Transición suave al girar */
-  cursor: pointer; /* Cambia el cursor al pasar sobre la foto */
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .foto img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px; /* Borde redondeado */
+  border-radius: 10px;
 }
 
 .foto:hover {
-  transform: scale(1.05); /* Aumenta el tamaño al pasar sobre la foto */
+  transform: scale(1.05);
 }
 
 .foto .nombre {
@@ -398,15 +415,13 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0; /* Oculta el nombre inicialmente */
+  opacity: 0;
   visibility: hidden;
   font-family: "Comic Sans MS", cursive;
   font-size: 24px;
   color: #fff;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
-
-
 
 /* Animación de giro */
 .foto.rotar {
@@ -433,8 +448,7 @@ img {
   background: #33b5e5;
 }
 
-/* /* --------------------------------------Pagina SERVICIOS*/
-/* Estilos generales */
+/* Estilos de la página de servicios */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -443,14 +457,8 @@ body {
   color: #495057;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 header {
-  background-color: #add8e6; 
+  background-color: #add8e6;
   color: #495057;
   padding: 20px 0;
   position: relative;
@@ -464,7 +472,6 @@ header {
 .logo img {
   height: 60px;
   width: 60px;
-  
 }
 
 .linea-verde {
@@ -473,7 +480,7 @@ header {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #046825; 
+  background-color: #046825;
 }
 
 nav {
@@ -485,6 +492,7 @@ nav {
 .menu ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .menu ul li {
@@ -523,6 +531,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0;
 }
 
 .servicios ul li {
@@ -572,7 +581,7 @@ main {
 .contacto button {
   width: 50%;
   padding: 10px 20px;
-  background-color: #add8e6; 
+  background-color: #add8e6;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -580,16 +589,15 @@ main {
   font-weight: bold;
   font-size: 16px;
 }
-/* --------------------------------------FOOTER*/
-/* Estilos para el footer */
+
+/* Estilos del footer */
 footer {
   background-color: #9ad4eb;
-  padding: 30px 0;
+  padding: 15px 0;
 }
+
 .titulo2 {
-  font-family: 'Dancing Script', cursive; /* Tipografía manuscrita */
-  font-style: italic; /* Letra inclinada */
-  text-align: center; /* Centrar el texto */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
 }
 
 .container {
@@ -602,6 +610,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .col-md-4 {
@@ -610,58 +619,29 @@ footer {
 }
 
 h3 {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: #333;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-/* Estilos para las imágenes de las redes sociales */
 .redes-sociales img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   margin-right: 10px;
 }
+
 .redes-sociales li {
   display: inline-block;
 }
-/* Estilos para el encabezado del footer */
+
 footer h2 {
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* Estilos para el encabezado repetido */
-.encabezado-repetido {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-/* Estilos para el copyright */
 .copyright {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
-}
-
-#X .img { /* a revisar */
-  width: 20px; 
-  height: 20px; 
-}
-#facebook .img { /* a revisar */
-  width: 20px; 
-  height: 20px; 
-}
-#instagram .img { /* a revisar */
-  width: 20px; 
-  height: 20px; 
-}
-.copyright {
   display: grid;
   place-items: center;
 }
-
-
