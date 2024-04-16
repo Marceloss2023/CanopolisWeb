@@ -590,7 +590,7 @@
  /*------------------------------------------------------------------------------------------------*/
 /* Estilos para la sección */
 #sobre-nosotros {
-  width: 70%;
+  width: 60%;
   margin-right: 60%;
   margin-left: 1cm;
   padding: 20px;
@@ -598,7 +598,7 @@
   background-color: #f8f8f8;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+  }
 
 /* Estilos para los títulos */
 #sobre-nosotros h1, #sobre-nosotros h2 {
@@ -637,28 +637,25 @@
 
 /* Estilos para el último párrafo */
 #sobre-nosotros > p:last-child {
-  
+  margin-top: 30px; /* Mayor espacio entre el último párrafo y el contenido */
+  margin: center;
   font-style: italic; 
   font-family: 'Lucida Sans';
+  font-size: 32px;
 }
-
-
  /*------------------------------------------------------------------------------------------------*/
-
-
-#video-container {
-  position: fixed;
+ #imagen-conteiner {
   top: 50%;
-  right: 1cm; 
-  transform: translateY(-50%);
-  z-index: -1; /* Asegura que el video esté encima del contenido */
+  left: 50%;
+  display:flex;
+  justify-content: right; 
+  margin-right: 1cm;
 }
 
-#video {
-  width: 300px;
+#imagen-conteiner img {
+  max-width: 30%;
   height: auto;
 }
-
 /*------------------------------------------------------------------------------------------------*/
 
 
